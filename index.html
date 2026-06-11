@@ -1,108 +1,101 @@
-<!DOCTYPE html>
+make it advanced UI<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kairavi Malik | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Kairavi Malik | Portfolio</title>
+<link rel="stylesheet" href="style.css">
 
-    <!-- Smooth scrolling -->
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <header class="navbar">
     <div class="logo">Kairavi Malik</div>
 
-    <nav>
-        <a href="#home">Home</a>
+    <nav id="nav">
+        <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#resume">Resume</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
+
+    <div class="menu" onclick="toggleMenu()">☰</div>
 </header>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 <section id="home" class="hero">
-    <div class="hero-content">
-        <h1>Hi, I'm Kairavi Malik 👋</h1>
-        <p>Frontend Developer | AI Enthusiast | Learner</p>
+    <div class="hero-box">
+        <h1>Hi, I'm <span>Kairavi Malik</span></h1>
+        <p>Frontend Developer | AI Enthusiast | Problem Solver</p>
 
         <div class="hero-buttons">
-            <a href="https://github.com/" target="_blank" class="btn">GitHub</a>
             <a href="#projects" class="btn primary">View Projects</a>
+            <a href="Kairavi_resume.pdf" download class="btn">Download Resume</a>
         </div>
     </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="section">
+<section id="about" class="section reveal">
     <h2>About Me</h2>
     <p>
-        I am a passionate web developer focused on building clean, responsive, and user-friendly websites.
-        I enjoy learning new technologies and building real-world projects step by step.
+        I am a passionate developer building modern, responsive, and interactive web applications.
+        I love turning ideas into real-world projects.
     </p>
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="section dark">
+<section id="skills" class="section dark reveal">
     <h2>Skills</h2>
 
-    <div class="skills-grid">
-        <div>HTML</div>
-        <div>CSS</div>
-        <div>JavaScript (Learning)</div>
-        <div>Git & GitHub</div>
-        <div>Netlify</div>
+    <div class="grid">
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">JavaScript (Learning)</div>
+        <div class="card">Git & GitHub</div>
+        <div class="card">Netlify</div>
     </div>
 </section>
 
 <!-- RESUME -->
-<section id="resume" class="section">
+<section id="resume" class="section reveal">
     <h2>Resume</h2>
-    <p>View or download my resume below.</p>
-
-    <a href="Kairavi_resume.pdf" download class="btn primary">
-        Download Resume
-    </a>
+    <a href="Kairavi_resume.pdf" download class="btn primary">Download Resume</a>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="section dark">
+<section id="projects" class="section dark reveal">
     <h2>Projects</h2>
 
-    <div class="projects-grid">
-        <div class="card">
+    <div class="grid">
+        <div class="card project">
             <h3>Portfolio Website</h3>
-            <p>A responsive personal portfolio built using HTML & CSS.</p>
+            <p>Responsive portfolio using HTML & CSS.</p>
         </div>
 
-        <div class="card">
-            <h3>More Projects Coming Soon</h3>
-            <p>I am actively building new projects to improve my skills.</p>
+        <div class="card project">
+            <h3>More Coming Soon</h3>
+            <p>Building new real-world projects.</p>
         </div>
     </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section">
+<section id="contact" class="section reveal">
     <h2>Contact</h2>
     <p>Email: kairavi@example.com</p>
     <p>LinkedIn: linkedin.com/in/kairavi</p>
 </section>
 
-<!-- FOOTER -->
 <footer>
-    <p>© 2026 Kairavi Malik | Built with ❤️</p>
+    <p>© 2026 Kairavi Malik</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
