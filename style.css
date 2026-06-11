@@ -1,25 +1,81 @@
 body {
     font-family: Arial, sans-serif;
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
-    line-height: 1.6;
-    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
 }
 
-header {
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    padding: 15px 30px;
+}
+
+.logo {
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
     text-align: center;
-    padding: 30px;
-}
-
-section {
-    margin-bottom: 30px;
+    padding: 80px 20px;
     background: white;
-    padding: 15px;
-    border-radius: 8px;
 }
 
-h2 {
-    border-bottom: 2px solid black;
-    padding-bottom: 5px;
+.hero h1 {
+    font-size: 40px;
+}
+
+.buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about, .projects, .contact {
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* PROJECT CARDS */
+.project-card {
+    background: #eee;
+    padding: 20px;
+    margin: 10px auto;
+    width: 60%;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: white;
 }
