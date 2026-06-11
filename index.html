@@ -9,64 +9,75 @@
 
 <body>
 
-<!-- NAVBAR -->
-<header>
-    <nav class="navbar">
-        <h2 class="logo">Kairavi</h2>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+<header class="navbar">
+    <div class="logo">Kairavi Malik</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </nav>
 </header>
 
-<!-- HERO SECTION -->
 <section id="home" class="hero">
-    <h1>Hi, I'm Kairavi Malik 👋</h1>
-    <p>Frontend Developer | AI Enthusiast | Learner</p>
+    <div class="hero-content">
+        <h1>Hi, I'm Kairavi Malik 👋</h1>
+        <p>Frontend Developer | AI Enthusiast | Problem Solver</p>
 
-    <div class="buttons">
-        <a href="Kairavi_resume.pdf" download>Download Resume</a>
-        <a href="https://github.com/" target="_blank">GitHub</a>
+        <div class="hero-buttons">
+            <a href="Kairavi_resume.pdf" download class="btn primary">Download Resume</a>
+            <a href="https://github.com/" target="_blank" class="btn">GitHub</a>
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
     </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="about">
+<section id="about" class="section">
     <h2>About Me</h2>
     <p>
-        I am a passionate beginner in web development currently learning HTML, CSS, and JavaScript.
-        I enjoy building simple but creative web projects and improving my development skills step by step.
+        I am a passionate web developer focused on building clean, responsive, and user-friendly websites.
+        Currently exploring frontend development and real-world project building.
     </p>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="projects">
-    <h2>Projects</h2>
+<section id="skills" class="section dark">
+    <h2>Skills</h2>
 
-    <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>A responsive personal portfolio built using HTML & CSS.</p>
-    </div>
-
-    <div class="project-card">
-        <h3>More Coming Soon...</h3>
-        <p>I am currently working on new projects.</p>
+    <div class="skills-grid">
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JavaScript (Learning)</div>
+        <div>Git & GitHub</div>
+        <div>Netlify</div>
     </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
-    <h2>Contact Me</h2>
+<section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Responsive personal portfolio built using HTML & CSS.</p>
+        </div>
+
+        <div class="card">
+            <h3>More Projects Coming</h3>
+            <p>I am actively building new real-world projects.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section dark">
+    <h2>Contact</h2>
     <p>Email: kairavi@example.com</p>
     <p>LinkedIn: linkedin.com/in/kairavi</p>
 </section>
 
-<!-- FOOTER -->
 <footer>
-    <p>© 2026 Kairavi Malik | All Rights Reserved</p>
+    <p>© 2026 Kairavi Malik. Built with ❤️</p>
 </footer>
 
 </body>
